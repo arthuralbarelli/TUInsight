@@ -1,0 +1,81 @@
+Screen {
+    layout: vertical;
+}
+
+#question-box {
+    height: auto;
+    padding: 1 2 0 2;
+    border-bottom: solid $primary;
+}
+
+#question {
+    margin: 1 0;
+}
+
+#provider-status {
+    height: auto;
+    color: $text-muted;
+    margin-bottom: 1;
+}
+
+#blocks {
+    height: 1fr;
+}
+
+.block {
+    height: auto;
+    margin: 1 1 0 1;
+    padding: 1 1 0 1;
+    border: solid $boost;
+}
+
+.block-markdown {
+    height: auto;
+    margin-bottom: 1;
+}
+
+.block-source {
+    height: auto;
+    min-height: 3;
+    margin-bottom: 1;
+}
+
+.block-output {
+    height: auto;
+}
+
+.block-text {
+    height: auto;
+}
+
+.block-image {
+    width: auto;
+    height: auto;
+    margin-bottom: 1;
+}
+
+.error-sentence {
+    height: auto;
+    color: $error;
+}
+
+.traceback {
+    height: auto;
+    color: $text-muted;
+    margin-bottom: 1;
+}
+
+.run-status {
+    height: 1;
+    color: $text-muted;
+}
+
+.actions {
+    height: auto;
+    margin-top: 1;
+}
+
+.actions Button {
+    margin-right: 1;
+    margin-bottom: 1;
+}

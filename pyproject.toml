@@ -1,0 +1,36 @@
+[project]
+name = "tuinsight"
+version = "0.1.0"
+description = "Terminal notebook that starts with a question."
+readme = "README.md"
+authors = [
+    { name = "Arthur Albarelli", email = "arthuralbarelli@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "nbvim",
+    "pillow>=11.0.0",
+    "textual[syntax]>=8.2.8",
+    "textual-image>=0.8.0",
+]
+
+[project.urls]
+Repository = "https://github.com/arthuralbarelli/TUInsight"
+
+[project.scripts]
+tuinsight = "tuinsight:main"
+
+[tool.uv.sources]
+nbvim = { git = "https://github.com/arthuralbarelli/nbvim.git", branch = "cursor/cell-run-duration-c179" }
+
+[tool.black]
+target-version = ["py313"]
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "black>=26.5.1",
+]
